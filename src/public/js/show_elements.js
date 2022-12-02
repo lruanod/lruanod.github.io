@@ -66,7 +66,7 @@ const img_data2 = [{
 {
     id: "jsp",
     caption: "Java/Jsp",
-    img_path: "img/icons/jsp.png"
+    img_path: "img/icons/JSP.png"
 },
 {
     id: "servlet",
@@ -86,7 +86,7 @@ const img_data2 = [{
 {
     id: "jsf",
     caption: "Java/Jsf",
-    img_path: "img/icons/jsf.png"
+    img_path: "img/icons/JSF.png"
 },
 {
     id: "boot",
