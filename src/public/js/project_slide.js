@@ -30,5 +30,26 @@
 					slidesToScroll: 1
 				}
 			},
+			{
+				breakpoint: 360,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 240,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 120,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
 		]
 	});
