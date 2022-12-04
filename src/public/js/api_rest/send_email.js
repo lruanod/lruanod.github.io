@@ -10,7 +10,7 @@ async function sendEmail(event){
 
     showLoader();
 
-    const response = await fetch('/send-email', {
+    const response = await fetch('https://formsubmit.co/luislocoxcristo@gmail.com', {
 
         method: this.method,
         body: JSON.stringify({
