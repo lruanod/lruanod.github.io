@@ -236,6 +236,12 @@ const projects_data = [{
     technologies: "HTML-CSS-JavaScript-PHP-MYSQL-FW:LARAVEL,LIVEWIRE,BOOTSTRAP",
     description: "Development of a web application, blog style for school",
     url: "https://github.com/lruanod/blog.git"
+},
+{
+    name: "Electoral Prosecutor",
+    technologies: "PHP-JAVASCRIPT-MYSQL-FW:LARAVEL,LIVEWIRE,TAILWINDS",
+    description: "Web application made in Laravel with frontend livewire components with modules for the registration of minutes, vote counting and statistics for data interpretation, user registration, roles, profiles, tables, voting centers and political parties.",
+    url: "https://github.com/lruanod/fiscalvotaciones.git"
 }];
 
 const $project_list_div = document.getElementById("project-list");
