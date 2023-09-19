@@ -85,6 +85,23 @@
     width: 11rem;
     height: 11rem;
   }
+
+  .tech-icons2{
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tech-icons2 img{
+
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .tech-icons2 img:hover{
+
+    width: 11rem;
+    height: 11rem;
+  }
 }
 
 @media screen and (max-width: 808px){
@@ -106,6 +123,24 @@
     width: 11rem;
     height: 11rem;
   }
+
+  .tech-icons2{
+
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 15px;
+  }
+
+  .tech-icons2 img{
+
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .tech-icons2 img:hover{
+
+    width: 11rem;
+    height: 11rem;
+  }
 }
 
 @media screen and (max-width: 561px){
@@ -117,6 +152,18 @@
   }
 
   .tech-icons img:hover{
+
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+
+  .tech-icons2 img{
+
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .tech-icons2 img:hover{
 
     width: 7.25rem;
     height: 7.25rem;

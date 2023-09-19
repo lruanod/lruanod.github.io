@@ -402,8 +402,19 @@ header{
   margin-right: 15px;
 }
 
-.tech-div{
+.tech-icons2{
 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.tech-div{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -411,20 +422,36 @@ header{
   align-items: center;
   gap: 10px;
 }
+.tech-div2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 .tech-div img{
-
   border-radius: 25px;
   background-color: #fff;
   box-shadow: 0 0 50px 0 #049df5ea;;
   transition: .25s;
 }
-
+.tech-div2 img{
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 #049df5ea;;
+    transition: .25s;
+}
 .tech-div h3{
-
   color: #0cabf5e5;
   text-align: center;
   font-size: 1.1875rem;
+}
+.tech-div2 h3{
+    color: #0cabf5e5;
+    text-align: center;
+    font-size: 1.1875rem;
 }
 
 /*====================== PROJECT INFO ======================*/
@@ -473,6 +500,44 @@ header{
 	right: -15px;
 }
 
+.previous2,
+.next2 {
+
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #010038;
+}
+
+.previous2:hover,
+.next2:hover {
+
+    color: #049df5ea;
+}
+
+.previous2 {
+
+    left: -15px;
+}
+
+.next2 {
+
+    right: -15px;
+}
+
+
+
+
+
+
+
 .container_list {
 
 	overflow: hidden;
@@ -480,7 +545,7 @@ header{
 
 .project-info{
 
-	background-image: linear-gradient(#04025c, rgba(0, 0, 0, 0.7)), url("../img/binary_code.jpg");
+	background-image: linear-gradient(#04025c, rgba(0, 0, 0, 0.7)), url("../img/binary_code.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
@@ -539,6 +604,69 @@ header{
 	cursor: pointer;
 }
 
+.project-info2{
+
+    background-image: linear-gradient(#04025c, rgba(0, 0, 0, 0.7)), url("../img/binary_code2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: solid #010038;
+    border-radius: 25% 10%;
+    transition: .25s;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.project-info2:hover{
+
+    cursor: default;
+}
+
+.project-info2 h3{
+
+    color:  #08a3fc;
+    text-align: center;
+}
+
+.project-info2 h4, .project-info2 p{
+
+    color: #fff;
+    text-align: center;
+}
+
+.project-info2 h3{
+
+    font-size: 1.1875rem;
+}
+
+.project-info2 h4{
+
+    font-size: 0.88rem;
+}
+
+.project-info2 p{
+
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.0625rem;
+}
+
+.project-info2 a{
+
+    font-size: clamp(12px, 5vw, 16px);
+    color: #dddddd;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
 .indicators .glider-dot {
 
 	margin-top: 30px;
@@ -557,6 +685,27 @@ header{
 .indicators .glider-dot.active {
 
 	background: #049df5ea;;
+}
+
+
+.indicators2 .glider-dot {
+
+    margin-top: 30px;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #010038;
+    border-radius: 0;
+}
+
+.indicators2 .glider-dot:hover {
+
+    background: #049df5ea;;
+}
+
+.indicators2 .glider-dot.active {
+
+    background: #049df5ea;;
 }
 
 /*====================== CONTACT ======================*/
@@ -671,7 +820,7 @@ footer{
 
   width: 100%;
   height: auto;
-  background-color:#1689e7;
+  background-color: rgba(7, 150, 239, 0.75);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -690,9 +839,12 @@ footer h1{
   background-color: #01000e;
   border-radius: 50%;
   font-size: clamp(9px, 5vw, 16px);
-  padding: 2%;
-  width: 20%;
-  height: 10%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  width: auto;
+  height:auto;
 }
 
 footer h1 img{
@@ -727,6 +879,8 @@ footer a{
   background: rgb(1,0,56);
   background: linear-gradient(0deg, rgba(1,0,56,1) 0%, rgba(103,93,79,1) 50%, rgba(1,0,56,1) 100%);
 }
+
+
 
 .light-color{
 
