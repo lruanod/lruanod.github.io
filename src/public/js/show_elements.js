@@ -43,12 +43,12 @@ const img_data = [{
 },
 {
     id: "android",
-    caption: "Android Studio",
+    caption: "Android",
     img_path: "img/icons/android.png"
 },
 {
     id: "terminal",
-    caption: "Bash Scripting Cisco",
+    caption: "Bash Scripting",
     img_path: "img/icons/cisco.png"
 }];
 
@@ -132,7 +132,20 @@ const img_data2 = [{
     id: "livewire",
     caption: "Livewire",
     img_path: "img/icons/livewire.png"
-}];
+},
+    {
+        id: "inertia",
+        caption: "InertiaJS",
+        img_path: "img/icons/inertia.png"
+    },
+    {
+        id: "react",
+        caption: "ReactJS",
+        img_path: "img/icons/react.png"
+    }
+
+
+];
 
 const $tech_div = document.getElementById("tech-icons");
 
@@ -160,7 +173,7 @@ const $tech_div2 = document.getElementById("tech2-icons");
 img_data2.forEach(path => {
 
     const $div = document.createElement("div");
-    $div.classList.add("tech-div");
+    $div.classList.add("tech-div2");
     const $img = document.createElement("img");
     $img.src = path["img_path"];
     $img.alt = path["id"];
@@ -271,3 +284,70 @@ projects_data.forEach(project => {
 });
 
 $project_list_div.appendChild($fragment);
+
+
+
+const projects_data2 = [{
+
+    name: " Unit for Community  <br> Prevention of Violence",
+    technologies: "HTML-CSS-JavaScript-PHP-FW:VUE,TAILWIND",
+    description: " Responsive website design made with HTML5, CSS, JAVASCRIPT technologies and TAILWINDS libraries",
+    url: "https://upcv.gob.gt"
+    },
+    {
+        name: "Moviemega",
+        technologies: "HTML-CSS-JavaScript-PHP-MYSQL-FW:LARAVEL,LIVEWIRE,BOOTSTRAP",
+        description: "Multimedia web application, made in Laravel; using Frontend components with Livewire library, contains modules for user registration, multimedia, categories, languages, download links, fully admin.",
+        url: "https://moviemega-dvdrip.000webhostapp.com"
+    },
+    {
+
+        name: "Alerting is also <br> preventing",
+        technologies: "PHP-JAVASCRIPT-MYSQL-FW:LARAVEL,LIVEWIRE,TAILWINDS,ANDROID",
+        description: "Web application made in Laravel with livewire frontend components with modules for the registration of complaints of acts of violence with location and statistics for data interpretation, user registration, roles, profiles, complaints, data administration.",
+        url: "https://alertarupcv.com"
+    },
+
+    {
+        name: "School prevention",
+        technologies: "PHP-JAVASCRIPT-MYSQL-FW:LARAVEL,LIVEWIRE,TAILWINDS,ANDROID",
+        description: "Web application made in Laravel with inertia js frontend components with multimedia content modules, student registration and dashboard with statistics for interpretation of information, user registration, roles, profiles, comments, data management.",
+        url: "https://previescolar.com"
+    },
+    {
+        name: "MyBlog",
+        technologies: "HTML-CSS-JavaScript-PHP-MYSQL-FW:LARAVEL,LIVEWIRE,BOOTSTRAP",
+        description: "Development of a web application, blog style for school",
+        url: "https://campoyvida.000webhostapp.com"
+    },
+   ];
+
+
+const $project_list_div2 = document.getElementById("project-list2");
+
+
+projects_data2.forEach(project => {
+
+    const $div = document.createElement("div");
+    $div.classList.add("project-info2");
+    const $h3 = document.createElement("h3");
+    $h3.innerHTML = project["name"];
+    const $h4 = document.createElement("h4");
+    $h4.textContent = project["technologies"];
+    const $p = document.createElement("p");
+    $p.textContent = project["description"];
+    const $a = document.createElement("a");
+    $a.classList.add("light-btn");
+    $a.href = project["url"];
+    $a.target = "_blank";
+    $a.textContent = "Link";
+
+    $div.appendChild($h3);
+    $div.appendChild($h4);
+    $div.appendChild($p);
+    $div.appendChild($a);
+
+    $fragment.appendChild($div);
+});
+
+$project_list_div2.appendChild($fragment);
