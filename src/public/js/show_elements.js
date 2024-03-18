@@ -292,7 +292,7 @@ const projects_data2 = [{
     name: " Unit for Community  <br> Prevention of Violence",
     technologies: "HTML-CSS-JavaScript-PHP-FW:VUE,TAILWIND",
     description: " Responsive website design made with HTML5, CSS, JAVASCRIPT technologies and TAILWINDS libraries",
-    url: "https://upcv.gob.gt"
+    url: "https://lruanod.github.io/portafolioupcvsite/public/"
     },
     {
         name: "Moviemega",
